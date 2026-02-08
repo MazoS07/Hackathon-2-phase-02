@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir backendsrc)",
+      "Bash(find backend/src -name \"*.py\" -exec grep -l \"FastAPI\\\\|fastapi\" {} ;)",
+      "Bash(mkdir -p .github/workflows)",
+      "Bash(git add frontend/package.json .claude/settings.local.json)",
+      "Bash(git push origin master)",
+      "Bash(git add .claude/settings.local.json)"
+    ]
+  }
+}
